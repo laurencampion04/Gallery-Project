@@ -16,11 +16,12 @@
       font-family: sans-serif;
       background-color: #ededed;
     }
+
     polaris-chip {
       margin: 16px;
     }
   </style>
-  <title>polaris-chip / my-card</title>
+  <title>polaris-chip / my-card / image-gallery</title>
 </head>
 
 <body>
@@ -37,6 +38,100 @@
   <!-- this is what is bringing in the definition for this tag -->
   <script type="module" src="./src/polaris-chip.js"></script>
   <script type="module" src="./src/my-card.js"></script>
+</body>
+
+
+<body>
+  <div>
+    <h1>Gallery Project</h1>
+    <div class="container">
+      <div class="card" id="card">
+        <img
+          src="https://images.pexels.com/photos/4587955/pexels-photo-4587955.jpeg?cs=srgb&dl=pexels-anna-shvets-4587955.jpg&fm=jpg"
+          alt="" class="image1" width="300" height="400">
+          <h2>Who doesn't love a gallery of funny cat pictures?</h2>
+        <div class="card2" id="card2">
+          <img src="https://i0.wp.com/katzenworld.co.uk/wp-content/uploads/2019/06/funny-cat.jpeg?fit=1020%2C1020&ssl=1"
+            alt="" class="image2">
+          <img src="https://i0.wp.com/catcaresolutions.com/wp-content/uploads/2020/12/cute-cat-with-yellow-headband-on.png"
+            alt="" class="image2"> 
+          <button class="button-next">
+            Next
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <style>
+    html,
+    .card {
+      margin: 0px;
+      padding: 0px;
+      background-color: black;
+      height: 800px;
+      width: 800px;
+    }
+
+    h2 {
+
+      color:#ededed; 
+      font-size: 15px; 
+      margin-left: 220px;
+      
+    }
+
+    .image1 {
+      margin: 50px;
+      margin-top: 30px;
+      margin-left: 220px;
+      padding: 0px;
+
+    }
+
+    .card2 {
+      background-color: #a8a8a8;
+      width: 650px; 
+      height: 180px;
+      margin-left: 50px; 
+      border-color: #ff0000; 
+      border-width: 100px; 
+      
+    }
+
+    .image2 {
+      width: 120px;
+      height: 120px;
+      margin-top: 30px;
+      margin-left: 150px;
+    }
+
+    .image3 {
+      width: 120px;
+      height: 120px;
+      margin-top: 30px;
+      margin-left: 150px; 
+    }
+
+    .button-next {
+      font-family: sans-serif;
+      font-size: 20px;
+      margin-left: 500px;
+      margin-bottom: 100px;
+      margin-inline: 30px;
+      font-weight: bold;
+      padding: 0px;
+      width: 130px;
+      height: 35px;
+      background-color: #c221d0;
+    }
+
+    button:hover {
+      background-color: white;
+      transition: 0.2s ease-in-out;
+    }
+  </style>
 </body>
 
 </html>
