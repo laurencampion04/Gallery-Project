@@ -44,74 +44,140 @@
 <body>
   <div>
     <h1>Gallery Project</h1>
-    <div class="container">
+    <h2>Who doesn't love a page of funny cat pictures?</h2>
+    <div class="card-container">
       <div class="card" id="card">
         <img
           src="https://images.pexels.com/photos/4587955/pexels-photo-4587955.jpeg?cs=srgb&dl=pexels-anna-shvets-4587955.jpg&fm=jpg"
-          alt="" class="image1" width="300" height="400">
-          <h2>Who doesn't love a gallery of funny cat pictures?</h2>
-        <div class="card2" id="card2">
-          <img src="https://i0.wp.com/katzenworld.co.uk/wp-content/uploads/2019/06/funny-cat.jpeg?fit=1020%2C1020&ssl=1"
-            alt="" class="image2">
-          <img src="https://i0.wp.com/catcaresolutions.com/wp-content/uploads/2020/12/cute-cat-with-yellow-headband-on.png"
-            alt="" class="image2"> 
-          <button class="button-next">
-            Next
-          </button>
-        </div>
+          alt="" class="image1">
       </div>
     </div>
+    <div class="card2-container">
+      <div class="card2" id="card2">
+        <img src="https://i0.wp.com/katzenworld.co.uk/wp-content/uploads/2019/06/funny-cat.jpeg?fit=1020%2C1020&ssl=1"
+          alt="" class="image2">
+      </div>
+    </div>
+    <div class="card3-container">
+      <div class="card3" id="card3">
+        <img
+          src="https://i0.wp.com/catcaresolutions.com/wp-content/uploads/2020/12/cute-cat-with-yellow-headband-on.png"
+          alt="" class="image2">
+      </div>
+    </div>
+    <div class="popup-container">
+      <div class="card" onclick="showPopup('popup1')">Card 1</div>
+    </div>
+    <div class="popup" id="popup">
+      Content for card 1
+    </div>
+    <button class="button-next">
+      Next
+    </button>
   </div>
-  </div>
+  
 
   <style>
     html,
-    .card {
-      margin: 0px;
-      padding: 0px;
-      background-color: black;
-      height: 800px;
-      width: 800px;
+    .card-container{
+      display: flex;
+      justify-content: space-between; 
     }
 
-    h2 {
-
-      color:#ededed; 
-      font-size: 15px; 
-      margin-left: 220px;
-      
+    .card {
+      margin-left: 400px;
+      padding: 0px;
+      background-color: white;
+      height: 400px;
+      width: 300px;
+      transition: transform 0.3s ease;
     }
 
     .image1 {
-      margin: 50px;
-      margin-top: 30px;
-      margin-left: 220px;
+      margin-top: 50px;
+      margin-left: 50px;
       padding: 0px;
+      height: 300px;
+      width: 200px;
 
     }
 
-    .card2 {
-      background-color: #a8a8a8;
-      width: 650px; 
-      height: 180px;
-      margin-left: 50px; 
-      border-color: #ff0000; 
-      border-width: 100px; 
+    .card:hover {
+      background-color: #000000;
+      transform: scale(1.1);
+    }
+
+    .popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #c221d0;
+      padding: 20px; 
       
     }
 
+    h2 {
+      color: #000000;
+      font-size: 20px;
+      margin: 0px;
+
+    }
+
+    .card2-container{
+      display: flex;
+      justify-content: space-between; 
+    }
+
+    .card2 {
+      margin-left: 0px;
+      margin-top: 100px;
+      padding: 0px;
+      background-color: white;
+      height: 400px;
+      width: 300px;
+      transition: transform 0.3s ease;
+    }
+
     .image2 {
-      width: 120px;
-      height: 120px;
-      margin-top: 30px;
-      margin-left: 150px;
+      margin-top: 50px;
+      margin-left: 50px;
+      padding: 0px;
+      height: 300px;
+      width: 200px;
+    }
+
+    .card2:hover {
+      background-color: #000000;
+      transform: scale(1.1);
+    }
+
+    .card3-container {
+      display: flex;
+      justify-content: space-between; 
+    }
+
+    .card3 {
+      margin-left: 0px;
+      margin-top: 100px;
+      padding: 0px;
+      background-color: white;
+      height: 400px;
+      width: 300px;
+      transition: transform 0.3s ease; 
     }
 
     .image3 {
       width: 120px;
       height: 120px;
       margin-top: 30px;
-      margin-left: 150px; 
+      margin-left: 150px;
+    }
+
+    .card3:hover { 
+      background-color: #000000;
+      transform: scale(1.1);
     }
 
     .button-next {
