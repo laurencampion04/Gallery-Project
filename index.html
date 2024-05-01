@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 
@@ -10,7 +11,7 @@
   <style>
     :root,
     html,
-    body {
+    body { 
       margin: 0;
       padding: 0;
       font-family: sans-serif;
@@ -45,77 +46,256 @@
   <div>
     <h1>Gallery Project</h1>
     <h2>Who doesn't love a page of funny cat pictures?</h2>
-    <div class="card-container">
-      <div class="card" id="card">
+    <button id="showPopup" class="showPopup">Click for image gallery!</button> 
+    <div class="card" id="card1"> 
+      <div class="card-content">
+        
         <img
           src="https://images.pexels.com/photos/4587955/pexels-photo-4587955.jpeg?cs=srgb&dl=pexels-anna-shvets-4587955.jpg&fm=jpg"
           alt="" class="image1">
+          
+      </div>
+      
+    </div>
+    <div class="popupCard" id="popupCard">
+      <button class="closeButton">X</button>
+      <img-gallery>
+        <div class="slides">
+          <img
+            src="https://images.pexels.com/photos/4587955/pexels-photo-4587955.jpeg?cs=srgb&dl=pexels-anna-shvets-4587955.jpg&fm=jpg"
+            alt="Slide 1" class="slide">
+            
+            
+          <img src="https://i0.wp.com/katzenworld.co.uk/wp-content/uploads/2019/06/funny-cat.jpeg?fit=1020%2C1020&ssl=1"
+            alt="Slide 2" class="slide">
+            
+          <img
+            src="https://i0.wp.com/catcaresolutions.com/wp-content/uploads/2020/12/cute-cat-with-yellow-headband-on.png"
+            alt="Slide 3" class="slide">
+            
+          <img src="https://as2.ftcdn.net/v2/jpg/02/83/68/03/1000_F_283680364_m2oSdqSwDualfarUOxVnUfi3QSwuuhKW.jpg"
+            alt="Slide 4" class="slide">
+            
+          <img
+            src="https://preview.redd.it/funny-cat-pic-v0-tyzusvmzmr7a1.jpg?width=640&crop=smart&auto=webp&s=da5b45015291ff8fe068f5bf06b9efd7fa3176cc"
+            alt="Slide 5" class="slide">
+            
+          <img 
+            src="https://preview.redd.it/funny-cat-pic-v0-m82ymvmzmr7a1.jpg?width=640&crop=smart&auto=webp&s=f931d82b433ab84a30594aca3b20a9538842533c"
+            alt="Slide 6" class="slide">
+              
+            
+        </div>
+        <button class="button-back">
+          < 
+        </button>
+        <button class="button-next">
+          > 
+        </button>
+        <span class="slide-count">2/6</span>
+      </img-gallery>
+      <div class="card-content">
+        
       </div>
     </div>
+
+    <div class="text-container">
+      <h4> Reginald the cat is a model. He sits and poses as the camera flicks. 
+        He is the first ever cat to do so! He is so good at his job that he 
+        simply just sat there as the photographer put a piece of bread over his
+        head.  
+      </h4>
+    </div> 
+
     <div class="card2-container">
       <div class="card2" id="card2">
         <img src="https://i0.wp.com/katzenworld.co.uk/wp-content/uploads/2019/06/funny-cat.jpeg?fit=1020%2C1020&ssl=1"
           alt="" class="image2">
       </div>
+      <div class="text-container">
+        <h4> Greggor is 3 years old and his favorite animal is a shark. For his 3rd
+          birthday, his parents gave him a shark hat, and it is said that he has not
+          wanted to take it off since he got it. 
+        </h4>
+      </div>
     </div>
+
     <div class="card3-container">
       <div class="card3" id="card3">
         <img
           src="https://i0.wp.com/catcaresolutions.com/wp-content/uploads/2020/12/cute-cat-with-yellow-headband-on.png"
-          alt="" class="image2">
+          alt="" class="image3">
+      </div>
+      <div class="text-container">
+        <h4> Ginnie is a selfie prodigy. She learned how to take a selfie soon after she 
+          was born. This is one of the many selfies she has taken. She has taken so many
+          selfies, that her parents had to buy her an IPhone just so she could take as many
+          selfies as she wanted. 
+        </h4>
       </div>
     </div>
-    <div class="popup-container">
-      <div class="card" onclick="showPopup('popup1')">Card 1</div>
+
+    <div class="card4-container">
+      <div class="card4" id="card4">
+        <img src="https://as2.ftcdn.net/v2/jpg/02/83/68/03/1000_F_283680364_m2oSdqSwDualfarUOxVnUfi3QSwuuhKW.jpg" alt=""
+          class="image4">
+      </div>
+      <div class="text-container">
+        <h4> This is Howie. He thinks he is much bigger than he really is. He is only about 10 months
+          old but he thinks he is the size of a lion. He always tries to meow and attack with his paws
+          up like this, and jump at other cats, but he is not very intimidating, as you can see. 
+        </h4>
+      </div>
     </div>
-    <div class="popup" id="popup">
-      Content for card 1
+
+    <div class="card5-container">
+      <div class="card5" id="card5">
+        <img
+          src="https://preview.redd.it/funny-cat-pic-v0-tyzusvmzmr7a1.jpg?width=640&crop=smart&auto=webp&s=da5b45015291ff8fe068f5bf06b9efd7fa3176cc"
+          alt="" class="image5"> 
+      </div>
+      <div class="text-container">
+        <h4> This is Cat Barbie. She is an influencer. She makes more than her parents and shops all her 
+          money away on treats and accessories. She loves styling herself with different accessories, then
+          posting about them and where she got them. 
+        </h4>
+      </div>
     </div>
-    <button class="button-next">
-      Next
-    </button>
-  </div>
+
+    <div class="card6-container">
+      <div class="card6" id="card6">
+        <img
+          src="https://preview.redd.it/funny-cat-pic-v0-m82ymvmzmr7a1.jpg?width=640&crop=smart&auto=webp&s=f931d82b433ab84a30594aca3b20a9538842533c"
+          alt="" class="image6">  
+      </div>
+      <div class="text-container">
+        <h4> This is Dopey. Dopey is not a morning person. Everytime he has to wake up early, he frowns and 
+          will have an attitude until he is fed. Dopey needs his beauty sleep, otherwise he will sit and stare
+          at his owners like this picture.  
+        </h4>
+      </div>
+    </div>
+
+    <script>
+      const popupButton = document.getElementById('showPopup'); 
+      const popupCard = document.getElementById('popupCard'); 
+
+      popupButton.addEventListener('click', function() {
+        popupCard.classList.toggle('visible');
+      }); 
+
+      const slides = document.querySelectorAll('.slide');
+      let index = 0;
+      const totalSlides = slides.length; 
+
+      function updateSlideCount() {
+        const countSlides = document.querySelector('.slide-count');
+        countSlides.textContent = '${currentIndex + 1} / ${totalSlides}'; 
+      }
+
+      function showSlide() {
+        slides.forEach(slide => slide.style.display = 'none');
+        slides[index].style.display = 'block';
+      }
+
+      function nextSlide() {
+        index++;
+        if (index >= slides.length) {
+          index = 0;
+        }
+        showSlide();
+      }
+
+      function backSlide() {
+        index--;
+        if (index < 0) {
+          index = slides.length - 1;
+        }
+        showSlide();
+      }
+
+      document.querySelector('.button-next').addEventListener('click', nextSlide);
+      document.querySelector('.button-back').addEventListener('click', backSlide);
+
+      showSlide();
+
+      document.querySelector('.closeButton').addEventListener('click', function() {
+        document.getElementById('popupCard').style.display = 'none';
+      });
+
+    </script>
+
   
+  </div>
+
 
   <style>
     html,
-    .card-container{
+    :host {
       display: flex;
-      justify-content: space-between; 
+      position: absolute;
+      height: 80%;
+      width: 80%;
+
+    }
+
+    .card-container {
+      display: flex;
+      justify-content: space-between;
     }
 
     .card {
-      margin-left: 400px;
-      padding: 0px;
-      background-color: white;
+      margin-left: 0px;
+      margin-top: 50px;
+      padding: 10px; 
+      background-color: rgb(255, 251, 144);
       height: 400px;
       width: 300px;
       transition: transform 0.3s ease;
     }
 
+    .card-content {
+      text-align: right;
+    }
+
     .image1 {
-      margin-top: 50px;
-      margin-left: 50px;
-      padding: 0px;
-      height: 300px;
-      width: 200px;
+      margin-left: 25px;
+      margin-top: 25px;
+      display: flex;
+      height: 350px;
+      width: 250px;
+      justify-content: center;
+      align-items: center;
 
     }
 
-    .card:hover {
-      background-color: #000000;
-      transform: scale(1.1);
+    h4 {
+      margin-top: 50px; 
+      margin-left: 20px;
     }
 
-    .popup {
-      display: none;
+    .popupCard {
+      display: none; 
+      flex-direction: column;
+      align-items: center;
       position: fixed;
       top: 50%;
-      left: 50%;
+      left: 70%;
+      padding: 20px;
       transform: translate(-50%, -50%);
-      background-color: #c221d0;
-      padding: 20px; 
-      
+      background-color: #ffffff;
+      border-color: #000000;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    }
+
+    .popupCard.visible {
+      display: block; 
+    }
+
+    .image-container {
+      position: relative;
     }
 
     h2 {
@@ -125,78 +305,201 @@
 
     }
 
-    .card2-container{
+    h3 {
+      color: #000000;
+      font-size: 15px;
+      margin-left: 350px; 
+    }
+
+    .card2-container {
       display: flex;
-      justify-content: space-between; 
+      justify-content: space-between;
     }
 
     .card2 {
       margin-left: 0px;
-      margin-top: 100px;
-      padding: 0px;
-      background-color: white;
-      height: 400px;
-      width: 300px;
-      transition: transform 0.3s ease;
-    }
-
-    .image2 {
       margin-top: 50px;
-      margin-left: 50px;
-      padding: 0px;
-      height: 300px;
-      width: 200px;
-    }
-
-    .card2:hover {
-      background-color: #000000;
-      transform: scale(1.1);
-    }
-
-    .card3-container {
-      display: flex;
-      justify-content: space-between; 
-    }
-
-    .card3 {
-      margin-left: 0px;
-      margin-top: 100px;
-      padding: 0px;
-      background-color: white;
+      padding: 10px; 
+      background-color: rgb(152, 255, 151);
       height: 400px;
       width: 300px;
       transition: transform 0.3s ease; 
     }
 
+    .image2 {
+      margin-left: 25px;
+      margin-top: 25px;
+      margin-right: 25px;
+      display: flex;
+      height: 350px;
+      width: 250px;
+      justify-content: center;
+      align-items: center; 
+    }
+
+    .card3-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .card3 {
+      margin-left: 0px;
+      margin-top: 50px;
+      padding: 10px; 
+      background-color: rgb(231, 174, 114);
+      height: 400px;
+      width: 300px;
+      transition: transform 0.3s ease;
+    }
+
     .image3 {
-      width: 120px;
-      height: 120px;
-      margin-top: 30px;
-      margin-left: 150px;
+      margin-left: 25px;
+      margin-top: 25px;
+      margin-right: 25px;
+      display: flex;
+      height: 350px;
+      width: 250px;
+      justify-content: center;
+      align-items: center; 
     }
 
-    .card3:hover { 
-      background-color: #000000;
-      transform: scale(1.1);
+    .card4-container {
+      display: flex;
+      justify-content: space-between;
     }
 
-    .button-next {
+    .card4 {
+      margin-left: 0px;
+      margin-top: 50px;
+      padding: 10px; 
+      background-color: rgb(255, 144, 144);
+      height: 400px;
+      width: 300px;
+      transition: transform 0.3s ease;
+    } 
+
+    .image4 {
+      margin-left: 25px;
+      margin-top: 25px;
+      margin-right: 25px;
+      display: flex;
+      height: 350px;
+      width: 250px;
+      justify-content: center;
+      align-items: center; 
+    }
+
+    .card5-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .card5 {
+      margin-left: 0px;
+      margin-top: 50px;
+      padding: 10px; 
+      background-color: rgb(255, 144, 242);
+      height: 400px;
+      width: 300px;
+      transition: transform 0.3s ease;
+    }
+
+    .image5 {
+      margin-left: 25px;
+      margin-top: 25px;
+      margin-right: 25px;
+      display: flex;
+      height: 350px;
+      width: 250px;
+      justify-content: center;
+      align-items: center; 
+    }
+
+    .card6-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .card6 {
+      margin-left: 0px;
+      margin-top: 50px;
+      padding: 10px; 
+      background-color: rgb(144, 198, 255);
+      height: 400px;
+      width: 300px;
+      transition: transform 0.3s ease; 
+    }
+
+    .image6 {
+      margin-left: 25px;
+      margin-top: 25px;
+      margin-right: 25px;
+      display: flex;
+      height: 350px;
+      width: 250px;
+      justify-content: center;
+      align-items: center; 
+    }
+
+    .gallery {
+      position: relative;
+      width: 300px;
+      margin: 0 auto;
+    }
+
+    .slides {
+      display: flex;
+      position: relative;
+      overflow: hidden;
+      width: 300px;
+      height: 400px;
+    }
+
+    .slide {
+      flex-shrink: 0;
+      width: 300px;
+      height: 400px;
+    }
+
+    .button-next,
+    .button-back {
       font-family: sans-serif;
       font-size: 20px;
       margin-left: 500px;
       margin-bottom: 100px;
-      margin-inline: 30px;
+      margin-top: 30px;
+      margin-inline: 7px;
       font-weight: bold;
       padding: 0px;
-      width: 130px;
-      height: 35px;
+      width: 80px;
+      height: 30px;
       background-color: #c221d0;
+      left: 0;
     }
 
     button:hover {
       background-color: white;
       transition: 0.2s ease-in-out;
     }
+
+    .showPopup {
+      background-color: #c221d0;
+      font-family: sans-serif;
+      font-size: 17px; 
+      height: 50px;
+      width: 150px; 
+      margin-left: 10px; 
+      margin-top: 10px; 
+      font-weight: bold;
+    }
+
+    .closeButton {
+      background-color: #000000;
+      color:#ededed; 
+      margin-left: 275px; 
+      margin-bottom: 10px;
+    }
+
   </style>
 </body>
 
